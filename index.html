@@ -3,15 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="Generador de contraseñas premium, 100% local, sin servidores, sin registro y enfocado en privacidad." />
+
+    <title>Password GenerAitor – Generador de Contraseñas Seguras Online y Gratis</title>
+    <meta
+      name="description"
+      content="Genera contraseñas seguras y aleatorias online gratis con Password GenerAitor. 100% local, sin registro ni servidores. Analiza la fortaleza real, evita patrones débiles y crea PINs y claves API."
+    />
+    <meta name="author" content="Aitor Sánchez Gutiérrez" />
+    <meta name="keywords" content="generador de contraseñas, contraseñas seguras, password generator, generador de claves, generador de PIN, generador de API key, seguridad, privacidad" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://password-generaitor.pages.dev/" />
+    <meta name="google-site-verification" content="fK2gZcSYwHHPqDFWdIB5WD1eVONqa6kwIFqkRDRyX4g" />
+
     <meta name="theme-color" content="#0b0c0f" />
     <meta name="color-scheme" content="dark light" />
 
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Contraseñas" />
+    <meta name="apple-mobile-web-app-title" content="GenerAitor" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://password-generaitor.pages.dev/" />
+    <meta property="og:site_name" content="Password GenerAitor" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Password GenerAitor – Generador de Contraseñas Seguras Online y Gratis" />
+    <meta
+      property="og:description"
+      content="Genera contraseñas seguras y aleatorias online gratis. 100% local, sin registro ni servidores. Analiza la fortaleza real y evita patrones débiles."
+    />
+    <meta property="og:image" content="https://password-generaitor.pages.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Password GenerAitor — Generador de contraseñas seguras" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Password GenerAitor – Generador de Contraseñas Seguras Online y Gratis" />
+    <meta
+      name="twitter:description"
+      content="Genera contraseñas seguras y aleatorias online gratis. 100% local, sin registro ni servidores."
+    />
+    <meta name="twitter:image" content="https://password-generaitor.pages.dev/og-image.png" />
 
     <!--
       Content-Security-Policy estricta: la app es 100% cliente y no necesita
@@ -20,13 +56,59 @@
       Nota: 'frame-ancestors' no tiene efecto en un <meta> (solo vía cabecera
       HTTP), por eso se define en public/_headers para el despliegue en
       Cloudflare Pages, junto con el resto de cabeceras de seguridad.
+      El bloque JSON-LD de abajo es type="application/ld+json": los
+      navegadores no lo ejecutan como script, por lo que no requiere
+      'unsafe-inline' en script-src.
     -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';"
     />
 
-    <title>Generación de contraseñas</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Password GenerAitor",
+        "alternateName": "GenerAitor",
+        "url": "https://password-generaitor.pages.dev/",
+        "description": "Generador de contraseñas seguras y aleatorias, 100% local, sin registro ni servidores. Analiza la fortaleza real, evita patrones débiles y genera PINs y claves API.",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Any (Web)",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "isAccessibleForFree": true,
+        "inLanguage": ["es", "en"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Aitor Sánchez Gutiérrez",
+          "url": "https://aitorsanchez.pages.dev",
+          "sameAs": [
+            "https://aitorsanchez.pages.dev",
+            "https://aitorhub.vercel.app"
+          ]
+        },
+        "creator": {
+          "@type": "Person",
+          "name": "Aitor Sánchez Gutiérrez",
+          "url": "https://aitorsanchez.pages.dev"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://aitorsanchez.pages.dev/contacto",
+          "contactType": "customer support"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Aitor Hub",
+          "url": "https://aitorhub.vercel.app"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

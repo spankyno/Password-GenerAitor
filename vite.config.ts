@@ -13,10 +13,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/apple-touch-icon.png', 'favicon-32.png'],
       manifest: {
-        name: 'Generación de contraseñas',
-        short_name: 'Contraseñas',
+        name: 'Password GenerAitor',
+        short_name: 'GenerAitor',
         description:
-          'Generador de contraseñas premium, 100% local, sin servidores, sin registro y enfocado en privacidad.',
+          'Generador de contraseñas seguras y aleatorias, 100% local, sin servidores, sin registro y enfocado en privacidad.',
         theme_color: '#0b0c0f',
         background_color: '#0b0c0f',
         display: 'standalone',
