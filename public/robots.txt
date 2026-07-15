@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://password-generaitor.pages.dev/sitemap.xml
