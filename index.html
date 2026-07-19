@@ -109,28 +109,11 @@
         }
       }
     </script>
-    <script>
-      (function () {
-        var API_URL  = 'https://aitors-hub-dashboard.asanchezgu.workers.dev/api/v1/visit'; // o tu dominio propio
-        var API_KEY  = 'ak_206fd5b917d248c79faea78dd014c7cc';         // el api_key de esta app
-        var APP_SLUG = 'password-generaitor';                                        // el slug de esta app
-      
-        fetch(API_URL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + API_KEY
-          },
-          body: JSON.stringify({
-            app: APP_SLUG,
-            url: window.location.pathname
-          })
-        }).catch(function () {
-          // Fallo silencioso a propósito: el tracking nunca debe romper la web cliente
-        });
-      })();
-</script>
-    
+    <script src="https://aitors-hub-dashboard.asanchezgu.workers.dev/tracker.js"
+        data-app="password-generaitor"
+        data-key="ak_206fd5b917d248c79faea78dd014c7cc"
+        async>
+</script>    
   </head>
   <body>
     <div id="root"></div>
